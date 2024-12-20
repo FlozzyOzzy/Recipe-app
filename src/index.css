@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(231, 231, 231);
+  }
+
+/*category list*/
+.categorylist {
+    margin: 20px;
+}
+
+.categorylist-header {
+    text-align: center;
+    padding: 15px;
+}
+
+.categorylist-header1 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.categorylist-header2 {
+    margin-top: 15px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #424141;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px ;
+}
+
+.search-input {
+    padding: 10px;
+    width: 40%;
+    border: 2px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: black;
+    font-size: 16px;
+    border: 2px solid #ccc;
+}
+
+.categorylist-paragraph {
+    padding: 20px;
+}
+.categorylist-header3{
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.categorylist-text {
+    text-align: justify;
+    font-family:'Franklin Gothic Medium';
+    font-size: 1.1rem;
+    line-height: 2;
+    color: rgb(92, 92, 92);
+}
+
+.categorylist-categories {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.categorylist-categoriesheader {
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.categorylist-categorieslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.categorylist-item {
+    margin: 10px;
+    width: 200px; /* fixed width for consistent sizing */
+    text-align: center; /* centering the category cards */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-input {
+        width: 70%;
+    }
+
+    .categorylist-paragraph {
+        padding: 0 20px;
+    }
+}
+
+
+
+/*categorycard*/
+.category-card {
+    cursor: pointer; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: rgb(218, 216, 216);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 15px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    width: 30%;
+}
+.category-card:hover {
+    transform: translateY(-5px); /* Slightly raise the card */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.categorylist-img {
+    width: 100%; 
+    height: 15rem; 
+    object-fit: cover;
+    background-color: rgb(218, 216, 216); 
+}
+.categorycard-title {
+    font-size: 1.5rem; 
+    font-family:'Franklin Gothic Medium';
+    padding: 10px 20px; 
+    text-align: center; 
+    width: 100%; 
+    background-color: rgb(218, 216, 216);
+}
+.categorycard-text{
+    font-size: 1rem; 
+    font-family:'Franklin Gothic Medium';
+    padding: 10px 20px; 
+    text-align: center; 
+    width: 100%; 
+    background-color: rgb(218, 216, 216);
+    color: rgb(92, 92, 92);
+}
+
+
+
+
+
+/*categorypage*/
+.category-page-container {
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+.category-content {
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.category-title {
+    font-size: 3rem; 
+    font-family:'Franklin Gothic Medium';
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+.category-recipescard{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: column; 
+    align-items: center; 
+    gap: 10px; 
+    padding: 15px; 
+    margin-top: 20px; 
+}
+
+
+
+/*recipecard*/
+.recipe-card {
+    flex: 0 1 30%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 15px; 
+    overflow: hidden;
+     
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    background-color: rgb(218, 216, 216);
+}
+
+.recipe-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    transform: translateY(-5px); /* Slightly raise the card */
+}
+.recipe-image {
+    max-width: 100%;
+    height: 15rem;
+    object-fit: cover; 
+    border-radius: 4px; 
+    background-color: rgb(218, 216, 216);
+}
+.recipe-title {
+    font-family:'Franklin Gothic Medium';
+    text-align: center; 
+    font-size: 1.5rem;
+    margin-top: 15px;
+    background-color: rgb(218, 216, 216); 
+}
+
+.recipe-summary {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(92, 92, 92);
+    margin-top: 10px; 
+    font-family:'Franklin Gothic Medium';
+    text-align: left;
+    background-color: rgb(218, 216, 216);
+    padding: 20px;
+}
+
+
+
+/*recipesdetail*/
+.recipe-detail-container {
+    padding: 20px;
+    margin: auto;
+    width: 1000px; 
+    background-color: rgb(231, 231, 231);
+}
+
+.recipe-not-found {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 100px;
+    font-family:'Franklin Gothic Medium';
+}
+
+.recipedetail-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center; 
+    background-color: rgb(231, 231, 231);
+    font-family:'Franklin Gothic Medium';
+}
+
+.recipe-servings {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+}
+.recipedetail-image {
+    width: 80%;
+    height: 25rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.recipe-section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+    margin-top: 20px;
+}
+.recipe-ingredients {
+    font-family:'Franklin Gothic Medium';
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: rgb(92, 92, 92);
+    white-space: pre-wrap; /* Maintains formatting */
+    line-height: 1.5;
+}
+.recipe-instructions {
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium';
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: rgb(92, 92, 92);
+    white-space: pre-wrap; /* Maintains formatting */
+}
+
+
+
+/*footer*/
+.footer{
+    height: 10vh;
+    padding: 20px;
+}
+.copy-text{
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium';
+}
