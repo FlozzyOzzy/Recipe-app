@@ -1,5 +1,6 @@
 // src/components/RecipeCard.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import client from '../ContentfulClient.jsx';
 
@@ -14,6 +15,7 @@ function RecipeCard({ recipeId }) {
             content_type: 'universalContent', // Ensure this matches your Contentful content type
             'fields.id': recipeId  // Assuming 'id' is the correct field ID for your model
           });
+          
 
           if (response.items.length > 0) {
             setRecipe(response.items[0].fields);
@@ -43,5 +45,9 @@ function RecipeCard({ recipeId }) {
         </div>
     );
 }
+RecipeCard.propTypes = {
+    recipeId: PropTypes.string.isRequired,
+};
+
 
 export default RecipeCard;

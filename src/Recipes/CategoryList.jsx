@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CategoryCard from './CategoryCard.jsx';
 import { Categories } from '../Data.jsx';
 import RecipesList from './RecipesList.jsx';
@@ -80,8 +80,7 @@ function CategoryList() {
                     <h3 className='categorylist-header3'>What Are We About?</h3>
                     <p className='categorylist-text'>
                         Jikoni Flavors is a vibrant and inviting website dedicated to celebrating the rich culinary heritage of Kenya and beyond. While the platform serves as a goldmine of authentic Kenyan recipes, it also embraces a variety of international cuisines, offering a diverse collection of dishes for both locals and global food enthusiasts to enjoy. 
-                        From the sizzling delights of Nyama Choma (grilled meat) and the comforting warmth of Chapati (unleavened flatbread) to globally loved recipes like Italian pastas, Asian stir-fries, and Middle Eastern specialties, Jikoni Flavors ensures a well-rounded culinary experience. Each recipe is carefully tailored to help users recreate traditional and international dishes at home, with detailed insights into the ingredients and techniques behind every meal. 
-                        Jikoni Flavors is more than just a recipe site—it's a cultural and culinary gateway, making it an essential destination for anyone eager to explore the world’s flavors, one dish at a time.
+                        From the sizzling delights of Nyama Choma (grilled meat) and the comforting warmth of Chapati (unleavened flatbread) to globally loved recipes like Italian pastas, Asian stir-fries, and Middle Eastern specialties, Jikoni Flavors ensures a well-rounded culinary experience. Each recipe is carefully tailored to help users recreate traditional and international dishes at home, with detailed insights into the ingredients and techniques behind every meal.
                     </p>
                 </div>
                 <div className='categorylist-categories'>

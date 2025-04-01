@@ -1,5 +1,5 @@
 // src/components/RecipeDetails.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import RecipesList from './RecipesList.jsx';
 import client from '../ContentfulClient.jsx';
